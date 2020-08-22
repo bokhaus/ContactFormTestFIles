@@ -33,81 +33,95 @@
 <H1>Contact Us</H1>
               <p>
 
-<!-- Begin Response-O-Matic Form -->
-<!-- DO NOT EDIT YOUR FORM HERE, PLEASE LOG IN AND EDIT AT RESPONSE-O-MATIC.COM -->
-<form enctype="multipart/form-data" method="post" action="//www.response-o-matic.com/mail.php" accept-charset="UTF-8">
-	<div>
-		<input type="hidden" name="acctid" id="acctid" value="493oubmfsmxlalrq" />
-		<input type="hidden" name="formid" id="formid" value="1315279" />
-		<input type="hidden" name="required_vars" id="required_vars" value="name,email,field-f87ae63b05d26ac,field-4a7caf355575fc0,field-2bc1a4e27c51fc1,field-a588deb6671fa5c" />
-	</div>
-	<table cellspacing="5" cellpadding="5" border="0">
-		<tr>
-			<td valign="top">
-				<strong>Name:</strong>
-			</td>
-			<td valign="top">
-				<input type="text" name="name" id="name" size="40" value="" />
-				
-			</td>
-		</tr>
-		<tr>
-			<td valign="top">
-				<strong>Email Address:</strong>
-			</td>
-			<td valign="top">
-				<input type="text" name="email" id="email" size="40" value="" />
-				
-			</td>
-		</tr>
-		<tr>
-			<td valign="top">
-				<strong>Address</strong>
-			</td>
-			<td valign="top">
-				<input type="text" name="field-f87ae63b05d26ac" id="field-f87ae63b05d26ac" size="40" value="" />
-				
-			</td>
-		</tr>
-		<tr>
-			<td valign="top">
-				<strong>Phone</strong>
-			</td>
-			<td valign="top">
-				<input type="text" name="field-4a7caf355575fc0" id="field-4a7caf355575fc0" size="40" value="" />
-				
-			</td>
-		</tr>
-		<tr>
-			<td valign="top">
-				<strong>Message</strong>
-			</td>
-			<td valign="top">
-				<textarea name="field-2bc1a4e27c51fc1" id="field-2bc1a4e27c51fc1" rows="6" cols="40"></textarea>
-				
-			</td>
-		</tr>
-		<tr>
-			<td valign="top">
-				<strong>Would you like contacted by phone?</strong>
-			</td>
-			<td valign="top">
-				<input type="radio" name="field-a588deb6671fa5c" id="field-a588deb6671fa5c_0" value="Yes" /> Yes<br/>
-				<input type="radio" name="field-a588deb6671fa5c" id="field-a588deb6671fa5c_1" value="No" /> No<br/>
-				
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2" align="center">
-				<input type="submit" value=" Submit Form " />
-			</td>
-		</tr>
-	</table>
+<!-- 
+  * BEGINNING OF CONTACT FORM *
+ -->
+
+<!-- This is the php pipe for the script mailer.php -->
+<form method="POST" name="emailform" action="mailer.php" >
+
+<!-- This commented snippet may be used to manually send email with data. -->
+<!-- <form action="mailto:brian.bokusmc@gmail.com" method="POST" enctype="text/plain"> -->
+<table border="0" cellspacing="0" cellpadding="5" align="center">
+	<tr>
+	<td width="587">
+<fieldset>
+        <legend class="style1"><font face="Arial, Helvetica, sans-serif">Enter your information 
+        in the form below (items marked <font color="#FF0000">in red</font> are 
+        required):</font></legend>
+        <span class="style1"><br>
+        </span>
+        <table border="0" style="border-collapse: collapse" cellpadding="2" width="573">
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Name:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #f64e4e; float:left" name="name" size="30" maxlength="40" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Email 
+              Address:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #f64e4e; float:left" name="email" size="40" maxlength="60" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Company:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #ccccff; float:left" name="company" size="30" maxlength="40" value="" />
+</tr>
+<tr>	
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Street Addr:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #ccccff; float:left" name="street" size="30" maxlength="40" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Secret Word:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #f64e4e; float:left" name="street1" size="30" maxlength="40" value="" />
+You must type the word FAMILY here.
+</tr>
+<tr></tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">City:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #ccccff; float:left" name="city" size="20" maxlength="40" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">State:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #ccccff; float:left" name="state" size="3" maxlength="40" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Zip Code:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #ccccff; float:left" name="zip" size="12" maxlength="40" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Phone number:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #ccccff; float:left" name="phone" size="15" maxlength="40" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Fax:</font></td>
+            <td width="468" align="right" class="style1">
+<input type="text" style="border: 1px solid #ccccff; float:left" name="fax" size="15" maxlength="40" value="" />
+</tr>
+<tr>
+            <td width="91" class="style1"><font face="Arial, Helvetica, sans-serif">Message:</font></td>
+            <td width="468" align="left" class="style1"> 
+          <textarea name="textfield" style="border: 1px solid #f64e4e"; cols="35" rows="6"></textarea></td>
+</tr>
+
+</table>
+<div align="center"><input type="submit" name="submit" value="Submit Information" /></div>
+</fieldset>
+</td>
+</tr>
+</table>
 </form>
-<br><center><font face="Arial, Helvetica" size="1"><b>
-This form powered by <a href="http://www.response-o-matic.com">Freedback</a>
-</b></font></center>
-<!-- End Response-O-Matic Form -->
+
+<!-- 
+  *END OF CONTACT FORM*
+ -->
+ 
     <p> 
     </p> 
   </div>
