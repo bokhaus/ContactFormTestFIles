@@ -10,15 +10,14 @@
 .background{
     background: linear-gradient(rgba(0,0,50, 0.5), rgba(0,0,50,0.5));
     border: 2px solid black;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
 }
 .contact-title {
     margin-top: 100px;
     color: forestgreen;
     text-transform: uppercase;
-    /* transition: all 4s ease-in-out ; */
 }
 
 div.transbox {
@@ -72,3 +71,12 @@ strong {
     color:forestgreen;
     text-align: center;
 }
+
+/* .radio-td {
+    text-align: right;
+}
+
+.radio-td-letter {
+    color:forestgreen;
+    text-align: right;
+} */
