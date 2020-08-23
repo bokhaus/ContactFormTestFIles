@@ -26,7 +26,7 @@ body {
 form {
     margin-top: 50px;
     /* transition: all 4s ease-in-out; */
-    align-self: auto;
+    
 }
 
 .form-control {
@@ -60,7 +60,7 @@ form .submit:hover {
     cursor: pointer;
 }
 
-form .radio {
+form .radio-selection {
     color: white;
     text-align: center;
 }
