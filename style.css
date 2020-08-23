@@ -59,7 +59,7 @@ form .submit:hover {
     cursor: pointer;
 }
 
-form .radio {
+radio-selection .radio {
     color: white;
     text-align: center;
 }
