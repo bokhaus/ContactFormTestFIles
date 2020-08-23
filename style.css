@@ -64,7 +64,7 @@ form .radio {
     text-align: center;
 }
 
-form radio-hover:hover{
+form .radio-hover:hover{
     background-color: #f44336;
     cursor: pointer;
 }
