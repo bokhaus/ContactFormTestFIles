@@ -59,7 +59,12 @@ form .submit:hover {
     cursor: pointer;
 }
 
-radio-selection .radio {
+form .radio {
     color: white;
     text-align: center;
+}
+
+form .radio:hover{
+    background-color: #f44336;
+    cursor: pointer;
 }
